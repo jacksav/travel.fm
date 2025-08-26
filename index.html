@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>travel.fm - Your Premium Domain for Sale!</title>
+    <!-- Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <style>
         /* General Body Styles */
         body { 
@@ -20,7 +22,7 @@
         }
         .container { 
             margin: 20px auto; 
-            max-width: 800px; /* Slightly wider container */
+            max-width: 800px; /* Wider container */
             background-color: #ffffff; 
             padding: 50px; /* More padding */
             border-radius: 15px; /* Softer rounded corners */
@@ -36,7 +38,7 @@
             color: #dc3545; /* Prominent red accent */
             line-height: 1;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Stronger shadow for depth */
+            text-shadow: 2px 2px 5px rgba(0,0.0,0.2); /* Stronger shadow for depth */
         }
         .tagline {
             font-family: 'Montserrat', sans-serif;
@@ -44,21 +46,6 @@
             font-weight: 600;
             color: #007bff; /* Primary blue */
             margin-bottom: 20px;
-        }
-
-        /* Heading Styles */
-        h1 { 
-            font-family: 'Montserrat', sans-serif; /* Stronger heading font */
-            color: #007bff; /* Primary blue color */
-            margin-bottom: 30px; 
-            font-size: 2.8em; /* Larger heading */
-            font-weight: 700; /* Bold heading */
-            line-height: 1.2;
-            display: none; /* Hide the old H1 */
-        }
-        .domain-highlight { 
-            color: #dc3545; /* Red accent for the domain name */
-            font-weight: 700; 
         }
 
         /* Paragraph and List Styles */
@@ -234,7 +221,7 @@
         <p>Ready to make your mark? Fill out the inquiry form below, and let's discuss how <span class="domain-highlight">travel.fm</span> can become the cornerstone of your next big success!</p>
 
         <form action="https://formspree.io/f/mvgbpnpr" method="POST">
-            <!-- Hidden field to force English language -->
+            <!-- Hidden field to force English language on Formspree's success page -->
             <input type="hidden" name="_language" value="en" />
 
             <label for="name">Your Name:</label>
@@ -259,35 +246,5 @@
         </form>
     </div>
 
-    <!-- JavaScript for dynamic title/heading based on domain (optional, adapted) -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentDomain = window.location.hostname;
-            const domainHighlightColor = '#dc3545'; // Consistent highlight color
-            const domainName = 'travel.fm';
-
-            // Function to set content
-            function setContent(title, domainValue) {
-                const titleElement = document.querySelector('title');
-                if (titleElement) { titleElement.textContent = title; }
-                const domainOfInterestField = document.getElementById('domain_of_interest');
-                if (domainOfInterestField) { domainOfInterestField.value = domainValue; }
-            }
-
-            // If a custom domain is detected AND it's not the hardcoded one AND not a GitHub Pages URL
-            if (currentDomain && !currentDomain.includes('github.io') && currentDomain !== 'localhost' && currentDomain !== domainName) { 
-                const dynamicTitle = `Acquire ${currentDomain} - Premium Domain for Your Project!`;
-                // Dynamically update the prominent domain display and tagline
-                const topDomainDisplay = document.querySelector('.top-domain-display');
-                if (topDomainDisplay) { topDomainDisplay.textContent = currentDomain; }
-                const taglineElement = document.querySelector('.tagline');
-                if (taglineElement) { taglineElement.textContent = `Your Journey to an Iconic Brand Starts Here.`; }
-
-                // Adjust the price box title as well
-                const priceBoxH2 = document.querySelector('.price-box h2');
-                if (priceBoxH2) { priceBoxH2.innerHTML = `The <span class="domain-highlight">"${currentDomain}"</span> Domain is Available for Immediate Acquisition!`; }
-                
-                setContent(dynamicTitle, currentDomain);
-            } 
-            // Otherwise, use the default content for travel.fm
-            els
+</body>
+</html>
