@@ -1,3 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel.fm - Your Premium Domain for Sale!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body { 
+            font-family: 'Open Sans', Arial, sans-serif; /* Modern, readable font */
+            text-align: center; 
+            padding: 40px 20px; 
+            background-color: #f8f9fa; /* Light grey background */
+            color: #343a40; /* Darker text for contrast */
+            line-height: 1.7;
+            margin: 0;
+            -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container { 
+            margin: 20px auto; 
+            max-width: 800px; /* Slightly wider container */
+            background-color: #ffffff; 
+            padding: 50px; /* More padding */
+            border-radius: 15px; /* Softer rounded corners */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* More pronounced shadow */
+            border: 1px solid #e9ecef; /* Light border */
+        }
+
+        /* Prominent Domain Name at Top */
+        .top-domain-display {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 5em; /* Extremely large font size for the domain */
+            font-weight: 800; /* Extra bold */
+            color: #dc3545; /* Prominent red accent */
+            line-height: 1;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Stronger shadow for depth */
+        }
+        .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #007bff; /* Primary blue */
+            margin-bottom: 20px;
+        }
+
+        /* Heading Styles */
+        h1 { 
+            font-family: 'Montserrat', sans-serif; /* Stronger heading font */
+            color: #007bff; /* Primary blue color */
+            margin-bottom: 30px; 
+            font-size: 2.8em; /* Larger heading */
+            font-weight: 700; /* Bold heading */
+            line-height: 1.2;
+            display: none; /* Hide the old H1 */
+        }
+        .domain-highlight { 
+            color: #dc3545; /* Red accent for the domain name */
+            font-weight: 700; 
+        }
+
+        /* Paragraph and List Styles */
+        p { 
+            margin-bottom: 20px; 
+            font-size: 1.1em;
+            color: #495057;
+        }
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+            margin-bottom: 35px; 
+            font-size: 1.15em;
+            color: #555;
+            text-align: left; /* Align list items left */
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        li { 
+            margin-bottom: 12px; 
+            font-weight: 500; 
+            color: #343a40; 
+            position: relative;
+            padding-left: 25px; /* Space for bullet point */
+        }
+        li::before { /* Custom bullet point */
+            content: '✓';
+            color: #28a745; /* Green checkmark */
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        strong { font-weight: bold; color: #343a40; }
+
+        /* Price Box Styles */
+        .price-box {
+            background-color: #e6f7ff; /* Light blue background */
+            border: 2px solid #007bff; /* Primary blue border */
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 500px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .price-box h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #007bff;
+            font-size: 1.8em;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        .buy-now-price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.2em; /* Larger price */
+            font-weight: bold;
+            color: #28a745; /* Success green color */
+            margin-bottom: 15px;
+            display: block;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+        }
+        .price-note {
+            font-size: 1em;
+            color: #6c757d;
+            margin-top: 15px;
+        }
+
+        /* Form Styles */
+        form { 
+            text-align: left; 
+            margin-top: 50px; 
+            padding-top: 35px; 
+            border-top: 1px solid #e9ecef; /* Lighter border for form separation */
+        }
+        label { 
+            display: block; 
+            margin-bottom: 12px; 
+            font-weight: 600; 
+            color: #495057; 
+            font-size: 1em;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 28px); /* Adjusting for padding and border */
+            padding: 14px;
+            margin-bottom: 25px;
+            border: 1px solid #ced4da; /* Light grey border */
+            border-radius: 8px; /* Slightly more rounded inputs */
+            font-size: 1.05em;
+            box-sizing: border-box; 
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff; /* Highlight on focus */
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+            outline: none;
+        }
+        textarea { 
+            resize: vertical; 
+            min-height: 140px; /* Taller textarea */
+        }
+        button {
+            background-color: #007bff; /* Primary blue for button */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.15em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,123,255,0.2);
+        }
+        button:hover { 
+            background-color: #0056b3; 
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0,123,255,0.2);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body { padding: 25px 15px; }
+            .container { padding: 30px; margin: 15px auto; }
+            .top-domain-display { font-size: 3.5em; }
+            .tagline { font-size: 1.4em; }
+            .buy-now-price { font-size: 2.5em; }
+            p { font-size: 1em; }
+            ul { font-size: 1em; }
+            li { padding-left: 20px; }
+            li::before { left: -5px; }
+            input[type="text"], input[type="email"], textarea { width: calc(100% - 20px); padding: 10px; }
+            button { padding: 12px 20px; font-size: 1em; }
+        }
+        @media (max-width: 480px) {
+            .top-domain-display { font-size: 2.5em; }
+            .tagline { font-size: 1.1em; }
+            .buy-now-price { font-size: 2em; }
+            .container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-domain-display">travel.fm</div>
+        <div class="tagline">Your Journey to an Iconic Brand Starts Here.</div>
+
+        <div class="price-box">
+            <h2>This Premium Domain is Available for Immediate Acquisition!</h2>
+            <span class="buy-now-price">US $45,000</span>
+            <p class="price-note">Secure <span class="domain-highlight">travel.fm</span> now and establish your undeniable presence in the global travel and audio market. Serious offers are welcome.</p>
+        </div>
+
+        <p>Unleash the full potential of your next venture with <strong>travel.fm</strong> – a short, memorable, and uniquely impactful domain name. Perfectly blending the universally appealing keyword "travel" with the prestigious ".fm" top-level domain, this digital asset is engineered for success in the ever-expanding world of travel, tourism, and audio content.</p>
+        
+        <p>Imagine the possibilities:</p>
+        <ul>
+            <li><strong>The Definitive Travel Podcast:</strong> Launch an unforgettable audio series with a name that instantly resonates.</li>
+            <li><strong>Immersive Audio Guides:</strong> Offer unparalleled sonic journeys through destinations worldwide.</li>
+            <li><strong>An Engaging Online Travel Radio:</strong> Create a vibrant station broadcasting travel insights, music, and stories.</li>
+            <li><strong>A Dynamic Travel Blog or Magazine:</strong> Establish a powerful online presence with a cutting-edge identity.</li>
+            <li><strong>Innovative Travel Mobile App:</strong> Give your app an instantly recognizable and highly brandable name.</li>
+            <li>This domain boasts a decade of history, signaling an established and reliable online asset.</li>
+        </ul>
+
+        <p>This is more than just a domain; it's a foundation for a global brand. Don't miss this rare opportunity to own a piece of digital real estate that promises excellent return on investment and unparalleled market positioning.</p>
+
+        <p>Ready to make your mark? Fill out the inquiry form below, and let's discuss how <span class="domain-highlight">travel.fm</span> can become the cornerstone of your next big success!</p>
+
         <form action="https://formspree.io/f/mvgbpnpr" method="POST">
             <!-- Hidden field to force English language -->
             <input type="hidden" name="_language" value="en" />
@@ -10,7 +245,7 @@
 
             <label for="domain_of_interest">Domain(s) You Are Interested In:</label>
             <input type="text" id="domain_of_interest" name="domain_of_interest" value="travel.fm" readonly>
-
+            
             <label for="price_offer">Your Offer (US dollars, optional):</label>
             <input type="text" id="price_offer" name="price_offer" placeholder="E.g., 40000 USD or 'Make an Offer'">
 
@@ -22,3 +257,37 @@
 
             <button type="submit">Submit Inquiry</button>
         </form>
+    </div>
+
+    <!-- JavaScript for dynamic title/heading based on domain (optional, adapted) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentDomain = window.location.hostname;
+            const domainHighlightColor = '#dc3545'; // Consistent highlight color
+            const domainName = 'travel.fm';
+
+            // Function to set content
+            function setContent(title, domainValue) {
+                const titleElement = document.querySelector('title');
+                if (titleElement) { titleElement.textContent = title; }
+                const domainOfInterestField = document.getElementById('domain_of_interest');
+                if (domainOfInterestField) { domainOfInterestField.value = domainValue; }
+            }
+
+            // If a custom domain is detected AND it's not the hardcoded one AND not a GitHub Pages URL
+            if (currentDomain && !currentDomain.includes('github.io') && currentDomain !== 'localhost' && currentDomain !== domainName) { 
+                const dynamicTitle = `Acquire ${currentDomain} - Premium Domain for Your Project!`;
+                // Dynamically update the prominent domain display and tagline
+                const topDomainDisplay = document.querySelector('.top-domain-display');
+                if (topDomainDisplay) { topDomainDisplay.textContent = currentDomain; }
+                const taglineElement = document.querySelector('.tagline');
+                if (taglineElement) { taglineElement.textContent = `Your Journey to an Iconic Brand Starts Here.`; }
+
+                // Adjust the price box title as well
+                const priceBoxH2 = document.querySelector('.price-box h2');
+                if (priceBoxH2) { priceBoxH2.innerHTML = `The <span class="domain-highlight">"${currentDomain}"</span> Domain is Available for Immediate Acquisition!`; }
+                
+                setContent(dynamicTitle, currentDomain);
+            } 
+            // Otherwise, use the default content for travel.fm
+            els
