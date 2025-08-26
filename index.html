@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить домен travel.fm</title>
+    <style>
+        /* Стили для базового оформления страницы */
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px; 
+            background-color: #f4f4f4; 
+            color: #333; 
+            line-height: 1.6;
+            margin: 0;
+        }
+        .container { 
+            margin: 20px auto; 
+            max-width: 700px; 
+            background-color: #fff; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #007bff; 
+            margin-bottom: 25px; 
+            font-size: 2.2em;
+        }
+        p { 
+            margin-bottom: 15px; 
+        }
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+            margin-bottom: 20px; 
+            font-size: 1.1em;
+        }
+        li { 
+            margin-bottom: 8px; 
+            font-weight: bold; 
+            color: #555; 
+        }
+
+        /* Стили для формы */
+        form { 
+            text-align: left; 
+            margin-top: 40px; 
+            padding-top: 30px; 
+            border-top: 1px solid #eee; 
+        }
+        label { 
+            display: block; 
+            margin-bottom: 10px; 
+            font-weight: bold; 
+            color: #444; 
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 22px); /* Учитываем padding и border */
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+            box-sizing: border-box; /* Важно для корректной ширины */
+        }
+        textarea { 
+            resize: vertical; 
+            min-height: 120px; 
+        }
+        button {
+            background-color: #28a745; /* Зеленая кнопка */
+            color: white;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover { 
+            background-color: #218838; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Домен <span style="color: #dc3545;">"travel.fm"</span> доступен для покупки!</h1>
+        <p>Приветствуем! Мы предлагаем к продаже эксклюзивный домен для проектов в сфере путешествий, туризма, радио или подкастов:</p>
+        <ul>
+            <li>**travel.fm** - короткое, запоминающееся и привлекательное имя для вашего следующего проекта!</li>
+            <!-- Если у вас есть другие домены на продажу, добавьте их здесь: -->
+            <!-- <li>ваш_другой_домен.com</li> -->
+        </ul>
+        <p>Если вы заинтересованы в приобретении этого уникального домена или хотите узнать о других доступных доменах, пожалуйста, заполните форму ниже. Мы свяжемся с вами в ближайшее время для обсуждения деталей.</p>
+
+        <form action="https://formspree.io/f/mvgbpnpr" method="POST">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+            <label for="email">Ваш Email (для связи):</label>
+            <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+
+            <label for="domain_of_interest">Домен(ы), которым вы интересуетесь:</label>
+            <input type="text" id="domain_of_interest" name="domain_of_interest" value="travel.fm" readonly>
+            <!-- Поле 'domain_of_interest' автоматически заполнено и только для чтения -->
+
+            <label for="price_offer">Предлагаемая цена (по желанию):</label>
+            <input type="text" id="price_offer" name="price_offer" placeholder="Например: 5000 USD">
+
+            <label for="message">Ваше сообщение или вопросы:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Напишите ваше сообщение здесь..." required></textarea>
+
+            <!-- Honeypot - невидимое поле для отлова спам-ботов. НЕ УДАЛЯЙТЕ! -->
+            <input type="text" name="_gotcha" style="display:none" /> 
+
+            <button type="submit">Отправить запрос</button>
+        </form>
+    </div>
+
+    <!-- ОПЦИОНАЛЬНО: JavaScript для динамического отображения текущего домена в заголовке -->
+    <!-- Этот скрипт в данном случае менее актуален, т.к. домен "travel.fm" уже явно указан. -->
+    <!-- Однако, если вы решите использовать этот же файл для нескольких доменов, он поможет. -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentDomain = window.location.hostname;
+            // Проверяем, что домен не является github.io и не localhost
+            if (currentDomain && !currentDomain.includes('github.io') && currentDomain !== 'localhost' && currentDomain !== 'travel.fm') { 
+                const titleElement = document.querySelector('title');
+                if (titleElement) {
+                    titleElement.textContent = `Купить домен ${currentDomain}`;
+                }
+                const headingElement = document.querySelector('h1');
+                if (headingElement) {
+                    headingElement.innerHTML = `Домен <span style="color: #dc3545;">"${currentDomain}"</span> доступен для покупки!`;
+                }
+                const domainOfInterestField = document.getElementById('domain_of_interest');
+                if (domainOfInterestField) {
+                    domainOfInterestField.value = currentDomain; // Автоматически заполняем поле
+                }
+            } else if (currentDomain === 'travel.fm') {
+                // Убедимся, что при прямом заходе на travel.fm все корректно
+                const titleElement = document.querySelector('title');
+                if (titleElement) {
+                    titleElement.textContent = `Купить домен travel.fm`;
+                }
+                const headingElement = document.querySelector('h1');
+                if (headingElement) {
+                    headingElement.innerHTML = `Домен <span style="color: #dc3545;">"travel.fm"</span> доступен для покупки!`;
+                }
+                const domainOfInterestField = document.getElementById('domain_of_interest');
+                if (domainOfInterestField) {
+                    domainOfInterestField.value = 'travel.fm'; // Установим значение по умолчанию
+                }
+            }
+        });
+    </script>
+</body>
+</html>
